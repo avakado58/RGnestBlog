@@ -10,7 +10,7 @@ namespace RGnestBlog.Controllers
             ViewBag.Head = "Привет мир!";
             return View();
         }
-        public IActionResult NewControls()
+        public IActionResult Boll()
         {
             return View();
         }

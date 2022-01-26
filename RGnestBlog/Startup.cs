@@ -12,11 +12,16 @@ namespace RGnestBlog
 {
     public class Startup
     {
+        readonly IWebHostEnvironment _env;
+        public Startup(IWebHostEnvironment env)
+        {
+            _env = env;
+        }
 
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews()//выставляем совместимость с asp.net core 3.0
-                .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
+                .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest).AddSessionStateTempDataProvider();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

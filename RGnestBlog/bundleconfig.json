@@ -10,8 +10,9 @@
     ]
   },
   {
-    "outputFileName": "wwwroot/css/animations.min.css",
+    "outputFileName": "wwwroot/css/main.css",
     "inputFiles": [
+      "wwwroot/css/mainMasterPage.css",
       "wwwroot/css/animations.css"
     ]
   }
